@@ -15,11 +15,11 @@ int main()
         sl = i;
         for(k = i+1; k < n; k++)
         {
-            if (a[k] > a[i]) j = k;
+            if (a[k] < a[sl]) sl = k;
         }
         temp = a[sl];
-        a[sl] = a[j];
-        a[j] = temp;
+        a[sl] = a[i];
+        a[i] = temp;
     }
     printf("\n Sorted array using Selection sort is: ");
     for(i = 0; i < n; i++) printf("%5d",a[i]);

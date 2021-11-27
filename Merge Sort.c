@@ -25,7 +25,7 @@ void Merge(int a[],int mid, int low, int high)
     i = low;
     j = mid + 1;
     k = low;
-    while(i <= low && j <= high)
+    while(i <= mid && j <= high)
     {
         if (a[i] < a[j]) c[k++] = a[i++];
         else if (a[i] > a[j]) c[k++] = a[j++];
@@ -35,4 +35,3 @@ void Merge(int a[],int mid, int low, int high)
     while (j <= high) c[k++] = a[j++];
     for(i = 0; i <= high; i++) a[i] = c[i];
 }
-
