@@ -7,3 +7,6 @@
 
 ### Searching
 * [Binary Search](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BinarySearch.c "Iterative")
+
+### Stacks
+* [Stack Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/StackOperations.c)
