@@ -10,3 +10,4 @@
 
 ### Stacks
 * [Stack Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/StackOperations.c)
+* [Conversion of Infix to Pastfix](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/InfixToPostfix.py)
