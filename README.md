@@ -1,4 +1,4 @@
-# Data-Structures-Using-C
+# *Data Structures Using C*
 ### Sorting
 * [Bubble Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Bubble%20Sort.c)
 * [Insertion Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Insertion%20Sort.c)
@@ -6,8 +6,10 @@
 * [Merge Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Merge%20Sort.c)
 
 ### Searching
-* [Binary Search](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BinarySearch.c "Iterative")
+* [Linear Search](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/LinearSearch.c)
+* [Binary Search Recursive](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BinarySearchRec.c "Recursive")
+* [Binary Search Iterative](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BinarySearch.c "Iterative")
 
 ### Stacks
 * [Stack Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/StackOperations.c)
-* [Infix to Postfix Conversion](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/InfixToPostfix.py)
+* [Infix to Postfix Conversion - Python](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/InfixToPostfix.py)
