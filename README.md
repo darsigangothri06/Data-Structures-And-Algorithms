@@ -16,3 +16,4 @@
 
 ### Queues
 * [Ordinary Queue Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/QueueOperations.c)
+* [Circular Queue Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/CircularQueue.c)
