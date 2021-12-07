@@ -24,5 +24,5 @@
       <summary>Single Linked List</summary>
 
 
-    * [Single Linked List Creation "With N nodes"](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SingleLinkedList.c)
+    * [Single Linked List Creation](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SingleLinkedList.c "With N nodes")
   </details>
