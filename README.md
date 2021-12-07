@@ -14,6 +14,15 @@
 * [Stack Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/StackOperations.c)
 * [Infix to Postfix Conversion - Python](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/InfixToPostfix.py)
 
-### Queues
+### Queues 
 * [Ordinary Queue Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/QueueOperations.c)
 * [Circular Queue Operations in an array](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/CircularQueue.c)
+
+### Linked List
+* 
+  <details>
+      <summary>Single Linked List</summary>
+
+
+    * [Single Linked List Creation "With N nodes"](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SingleLinkedList.c)
+  </details>
