@@ -12,7 +12,7 @@ struct TAG
 typedef struct TAG NODE;
 
 // Creating Linkedlist with N nodes and START as start pointer
-NODE *CREATE(int *START, int N)
+NODE *CREATE(NODE *START, int N)
 {
     int i, X;
     NODE *p, *TEMP;
