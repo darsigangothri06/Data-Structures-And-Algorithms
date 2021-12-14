@@ -29,4 +29,7 @@
     * [Add Node at begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLLAdd_at_begin.c)
     * [Add Node at end](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLLAdd_at_end.c)
     * [Add Node at position](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Add_at_position.c)
+    * [Delete Node at Begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Del_node_at_begin.c)
+    * [Delete Node at End](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Del_node_at_end.c)
+    * [Delete Node at Position](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Del_Node_at_Pos.c)
   </details>
