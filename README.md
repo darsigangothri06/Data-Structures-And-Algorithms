@@ -35,3 +35,7 @@
 * Doubly Linked List
   * [Add Node at end](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddAtBegin.c)
   * [Add Node at begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddNodeAtBegin.c)
+  * [Add Node at position](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddNodeAtPOS.c)
+  * [Remove Node at begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_RemoveNodeAtBegin.c)
+  * [Remove Node at end](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_RemoveNodeAtEnd.c)
+  * [Remove Node at position](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_RemoveNodeAtPos.c)
