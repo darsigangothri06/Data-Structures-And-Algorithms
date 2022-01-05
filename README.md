@@ -30,4 +30,7 @@
   * [Delete Node at Begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Del_node_at_begin.c)
   * [Delete Node at End](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Del_node_at_end.c)
   * [Delete Node at Position](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Del_Node_at_Pos.c)
-  * [Reverse a Single Linked List](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Reverse.c)
+  * [Reverse a Single Linked List](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_Reverse.c) 
+
+* Doubly Linked List
+  * [Add Node at end](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddAtBegin.c)
