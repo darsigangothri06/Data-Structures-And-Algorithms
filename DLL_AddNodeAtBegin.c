@@ -13,19 +13,19 @@ typedef struct TAG NODE;
 NODE* AddAtBegin(NODE* START, int X)
 {
     NODE *temp, *p;
-    temp = (NODE*)malloc(sizeof(NODE));  // taking temporary node
+    temp = (NODE*)malloc(sizeof(NODE));
     temp -> PREV = NULL;
     temp -> DATA = X;
     temp -> NEXT = NULL;
-
-    if(START == NULL)  // if there is no DLL
+    if(START == NULL)
+    {
         START = temp;
+    }
+
     else
     {
-        p = START;
-        while(p -> NEXT != NULL)    
-            p = p -> NEXT; // moving p to next node
-        p -> NEXT = temp; // adding temp at end
+        temp -> NEXT = START;
+        START = temp;
     }
 
     p = START;
