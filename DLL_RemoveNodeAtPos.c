@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// segmentation fault
-
 struct TAG
 {
     struct TAG *PREV;
@@ -20,6 +18,7 @@ NODE* RemoveNodeAtPos(NODE* START, int POS)
         printf("DLL is empty\n");
     else
     {
+        p = START;
         for(i = 0; i < (POS - 1); i++)
         {
             q = p;
