@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// error at pos 1
-
 struct TAG
 {
     struct TAG *PREV;
@@ -14,7 +12,7 @@ typedef struct TAG NODE;
 
 NODE* AddAtPos(NODE* START, int X, int POS)
 {
-    NODE *temp, *p;
+    NODE *temp, *p, *q;
     int i;
     temp = (NODE*)malloc(sizeof(NODE));
     temp -> PREV = NULL;
@@ -31,19 +29,19 @@ NODE* AddAtPos(NODE* START, int X, int POS)
     else
     {
         p = START;
-        for(i = 0; i < (POS - 1); i++) // error at position 1
+        q = NULL;
+        for(i = 0; i < (POS - 1); i++)
         {
             if(p == NULL)
             {
-                printf("\n Cannot Add due to insufficient nodes\n.");
-                break;
+                printf("\nCannot Add due to insufficient nodes\n");
+                return START;
             }
+            q = p;
             p = p -> NEXT;
         }
-
         temp -> NEXT = p -> NEXT;
-        p -> NEXT = temp -> PREV;
-
+        p -> NEXT = temp;
     }
 
     p = START;
