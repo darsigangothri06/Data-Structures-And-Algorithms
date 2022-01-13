@@ -42,7 +42,10 @@ void PUSH(int X)
 int POP()
 {
     if(START == NULL)
+    {
         printf("SLL is empty");
+        return -99;
+    }
     else
     {
         NODE *q = START;
