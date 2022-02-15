@@ -4,6 +4,7 @@
 * [Insertion Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Insertion%20Sort.c)
 * [Selection Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Selection%20Sort.c)
 * [Merge Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Merge%20Sort.c)
+* [Radix Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/RadixSort.c)
 
 ### Searching
 * [Linear Search](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/LinearSearch.c)
