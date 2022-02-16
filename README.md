@@ -46,6 +46,8 @@
 * Circular Single Linked List
   * [Add Node at Begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/CLL_AddAtBegin.c)
   * [Add Node at End](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/CLL_AddAtEnd.c)
+  * [Delete Node at Begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/CLL_DelAtBegin.c)
+  * [Delete Node at End](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/CLL_DeleteAtEnd.c)
 
 * Application of Linked List - Polynomial
   * [Creation of Polynomial](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/PolynomialCreation.c)
