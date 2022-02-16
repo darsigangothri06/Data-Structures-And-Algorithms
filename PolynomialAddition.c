@@ -96,9 +96,6 @@ void AddPoly()
             TERM -> coef = p -> coef;
             TERM -> expo = p -> expo;
             TERM -> LINK = NULL;
-
-            r = R;
-            while(r -> LINK != NULL) r = r -> LINK;
             r -> LINK = TERM;
 
             p = p -> LINK;
@@ -109,11 +106,7 @@ void AddPoly()
             TERM -> coef = q -> coef;
             TERM -> expo = q -> expo;
             TERM -> LINK = NULL;
-
-            r = R;
-            while(r -> LINK != NULL) r = r -> LINK;
             r -> LINK = TERM;
-
             q = q -> LINK;
         }
     }
