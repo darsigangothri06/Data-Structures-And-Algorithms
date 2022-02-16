@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// no R(x)
+// Incorrect Output
 struct TAG
 {
     int coef;
@@ -49,10 +49,11 @@ void CreateSecond(int C, int E)
 
 void AddPoly()
 {
-    POLY *TERM, *p = P, *q = Q, *r;
-    TERM = (POLY*)malloc(sizeof(POLY));
+    POLY *TERM, *p = P, *q = Q, *r = R;
     while(p != NULL && q != NULL)
     {
+        printf("\n in for %d %d %d %d", p -> coef, p -> expo, q -> coef, q -> expo);
+        TERM = (POLY*)malloc(sizeof(POLY));
         if(p -> expo > q -> expo)
         {
             TERM -> coef = p -> coef;
@@ -82,33 +83,34 @@ void AddPoly()
             q = q -> LINK;
         }
 
-        if(R == NULL) R = TERM;
+        if(R == NULL) 
+        {
+            R = TERM;
+            r = TERM;
+        }
+
         else
-        {
-            r = R;
-            while(r -> LINK != NULL) r = r -> LINK;
             r -> LINK = TERM;
-        }
+    }
+    // remaining terms of P
+    while(p != NULL)
+    {
+        TERM = (POLY*)malloc(sizeof(POLY));
+        TERM -> coef = p -> coef;
+        TERM -> expo = p -> expo;
+        TERM -> LINK = NULL;
+        r -> LINK = NULL;
+        p = p -> LINK;
+    }
 
-        // remaining terms of P
-        while(p != NULL)
-        {
-            TERM -> coef = p -> coef;
-            TERM -> expo = p -> expo;
-            TERM -> LINK = NULL;
-            r -> LINK = TERM;
-
-            p = p -> LINK;
-        }
-
-        while(q != NULL)
-        {
-            TERM -> coef = q -> coef;
-            TERM -> expo = q -> expo;
-            TERM -> LINK = NULL;
-            r -> LINK = TERM;
-            q = q -> LINK;
-        }
+    while(q != NULL)
+    {
+        TERM = (POLY*)malloc(sizeof(POLY));
+        TERM -> coef = q -> coef;
+        TERM -> expo = q -> expo;
+        TERM -> LINK = NULL;
+        r -> LINK = NULL;
+        q = q -> LINK;
     }
 }
 
@@ -116,15 +118,15 @@ void main()
 {
     POLY *p = P, *q = Q, *r = R;
     CreateFirst(2,2);
-    CreateFirst(5,1);
-    CreateFirst(4,0);
 
-    CreateSecond(2,2);
-    CreateSecond(5,1);
+    CreateSecond(2,3);
+    CreateSecond(2,1);
     CreateSecond(4,0);
 
+    AddPoly();
+
     p = P;
-    printf("P(x) = ");
+    printf("\nP(x) = ");
     while(p != NULL)
     {
         printf("(%d x ^ %d) + ", p ->coef, p -> expo);
@@ -133,21 +135,11 @@ void main()
     printf("\n");
 
     q = Q;
-    printf("Q(x) = ");
+    printf("\nQ(x) = ");
     while(q != NULL)
     {
         printf("(%d x ^ %d) + ", q ->coef, q -> expo);
         q = q -> LINK;
     }
-    printf("\n");
-
-    r = R;
-    printf("R(x) = ");
-    while(r != NULL)
-    {
-        printf("(%d x ^ %d) + ", r ->coef, r -> expo);
-        r = r -> LINK;
-    }
-
-    AddPoly();
+    
 }
