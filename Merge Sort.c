@@ -33,5 +33,5 @@ void Merge(int a[],int mid, int low, int high)
     }
     while (i <= mid) c[k++] = a[i++];
     while (j <= high) c[k++] = a[j++];
-    for(i = 0; i <= high; i++) a[i] = c[i];
+    for(i = low; i <= high; i++) a[i] = c[i];
 }
