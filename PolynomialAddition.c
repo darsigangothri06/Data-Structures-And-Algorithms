@@ -21,7 +21,7 @@ void CreateFirst(int C, int E)
     TERM -> expo = E;
     TERM -> LINK = NULL;
 
-    if(P == NULL) p = TERM;
+    if(P == NULL) P = TERM;
     else
     {
         p = P;
@@ -71,7 +71,7 @@ void AddPoly()
             //moving q
             q = q -> LINK;
         }
-        else if(p -> expo == q -> expo)
+        else
         {
             TERM -> coef = p -> coef + q -> coef;
             TERM -> expo = p -> expo;
@@ -117,6 +117,36 @@ void AddPoly()
             q = q -> LINK;
         }
     }
+}
+
+void main()
+{
+    POLY *p = P, *q = Q, *r = R;
+    CreateFirst(2,2);
+    CreateFirst(5,1);
+    CreateFirst(4,0);
+
+    CreateSecond(2,2);
+    CreateSecond(5,1);
+    CreateSecond(4,0);
+
+    p = P;
+    printf("P(x) = ");
+    while(p != NULL)
+    {
+        printf("(%d x ^ %d) + ", p ->coef, p -> expo);
+        p = p -> LINK;
+    }
+    printf("\n");
+
+    q = Q;
+    printf("Q(x) = ");
+    while(q != NULL)
+    {
+        printf("(%d x ^ %d) + ", q ->coef, q -> expo);
+        q = q -> LINK;
+    }
+    printf("\n");
 
     r = R;
     printf("R(x) = ");
@@ -125,17 +155,6 @@ void AddPoly()
         printf("(%d x ^ %d) + ", r ->coef, r -> expo);
         r = r -> LINK;
     }
-}
-
-void main()
-{
-    CreateFirst(2,2);
-    CreateFirst(5,1);
-    CreateFirst(4,0);
-
-    CreateSecond(2,2);
-    CreateSecond(5,1);
-    CreateSecond(4,0);
 
     AddPoly();
 }
