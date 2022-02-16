@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Incorrect Output
 struct TAG
 {
     int coef;
@@ -11,7 +10,7 @@ struct TAG
 
 typedef struct TAG POLY;
 
-POLY *P = NULL, *Q = NULL, *R = NULL;
+POLY *P = NULL, *Q = NULL, *R = NULL, *r = NULL;
 
 void CreateFirst(int C, int E)
 {
@@ -49,10 +48,9 @@ void CreateSecond(int C, int E)
 
 void AddPoly()
 {
-    POLY *TERM, *p = P, *q = Q, *r = R;
+    POLY *TERM, *p = P, *q = Q;
     while(p != NULL && q != NULL)
     {
-        printf("\n in for %d %d %d %d", p -> coef, p -> expo, q -> coef, q -> expo);
         TERM = (POLY*)malloc(sizeof(POLY));
         if(p -> expo > q -> expo)
         {
@@ -84,13 +82,14 @@ void AddPoly()
         }
 
         if(R == NULL) 
-        {
             R = TERM;
-            r = TERM;
-        }
 
         else
+        {
+            r = R;
+            while(r -> LINK != NULL) r = r -> LINK;
             r -> LINK = TERM;
+        }
     }
     // remaining terms of P
     while(p != NULL)
@@ -99,7 +98,11 @@ void AddPoly()
         TERM -> coef = p -> coef;
         TERM -> expo = p -> expo;
         TERM -> LINK = NULL;
-        r -> LINK = NULL;
+        
+        r = R;
+        while(r -> LINK != NULL) r = r -> LINK;
+        r -> LINK = TERM;
+
         p = p -> LINK;
     }
 
@@ -109,7 +112,11 @@ void AddPoly()
         TERM -> coef = q -> coef;
         TERM -> expo = q -> expo;
         TERM -> LINK = NULL;
-        r -> LINK = NULL;
+
+        r = R;
+        while(r -> LINK != NULL) r = r -> LINK;
+        r -> LINK = TERM;
+
         q = q -> LINK;
     }
 }
@@ -129,7 +136,7 @@ void main()
     printf("\nP(x) = ");
     while(p != NULL)
     {
-        printf("(%d x ^ %d) + ", p ->coef, p -> expo);
+        printf(" + (%d x ^ %d) ", p ->coef, p -> expo);
         p = p -> LINK;
     }
     printf("\n");
@@ -138,7 +145,15 @@ void main()
     printf("\nQ(x) = ");
     while(q != NULL)
     {
-        printf("(%d x ^ %d) + ", q ->coef, q -> expo);
+        printf(" + (%d x ^ %d)", q ->coef, q -> expo);
+        q = q -> LINK;
+    }
+
+    q = R;
+    printf("\nR(x) = ");
+    while(q != NULL)
+    {
+        printf(" + (%d x ^ %d)", q ->coef, q -> expo);
         q = q -> LINK;
     }
     
