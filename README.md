@@ -45,3 +45,4 @@
 
 * Application of Linked List - Polynomial
   * [Creation of Polynomial](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/PolynomialCreation.c)
+  * [Polynomial Addition](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/PolynomialAddition.c)
