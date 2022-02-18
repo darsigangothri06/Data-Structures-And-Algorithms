@@ -14,7 +14,7 @@ int binary_search(int a[],int low, int high, int target)
 
 int main()
 {
-    int a[5] = {34,23,12,56,4}, target = 230, result;
+    int a[5] = {34,23,12,6,4}, target = 230, result;
     result = binary_search(a,0,5-1,target);
     if(result != -1) printf("Element found at %d", result);
     else printf("Element is not found");
