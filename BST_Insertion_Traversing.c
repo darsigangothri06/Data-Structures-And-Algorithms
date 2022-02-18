@@ -30,6 +30,26 @@ void INORDER_TRAVERSE(BST *Root)
     }
 }
 
+void PREORDER_TRAVERSE(BST *Root)
+{
+    if(Root != NULL)
+    {
+        printf("%d - ", Root -> DATA);
+        PREORDER_TRAVERSE(Root -> LCHILD);
+        PREORDER_TRAVERSE(Root -> RCHILD);   
+    }
+}
+
+void POSTORDER_TRAVERSE(BST *Root)
+{
+    if(Root != NULL)
+    {
+        POSTORDER_TRAVERSE(Root -> LCHILD);
+        POSTORDER_TRAVERSE(Root -> RCHILD);  
+        printf("%d - ", Root -> DATA); 
+    }
+}
+
 BST *INSERT(BST* Root, int X)
 {
     if(Root == NULL)
@@ -49,5 +69,10 @@ void main()
     ROOT = INSERT(ROOT, 31);
     ROOT = INSERT(ROOT, 11);
     ROOT = INSERT(ROOT, 91);
+    printf("Inorder: ");
     INORDER_TRAVERSE(ROOT);
+    printf("\nPreorder: ");
+    PREORDER_TRAVERSE(ROOT);
+    printf("\nPostorder: ");
+    POSTORDER_TRAVERSE(ROOT);
 }
