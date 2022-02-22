@@ -59,6 +59,7 @@ NODE* AddAtEnd(NODE* START, int X)
         while(p -> NEXT != NULL)    
             p = p -> NEXT; // moving p to next node
         p -> NEXT = temp; // adding temp at end
+        temp -> PREV = p;
     }
 
     p = START;
