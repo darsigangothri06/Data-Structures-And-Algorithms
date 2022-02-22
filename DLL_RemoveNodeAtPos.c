@@ -26,6 +26,9 @@ NODE* RemoveNodeAtPos(NODE* START, int POS)
         }
 
         q -> NEXT = p -> NEXT;
+        p -> NEXT -> PREV = q;
+        p -> NEXT = NULL;
+        p -> PREV = NULL;
         free(p);
     }
 
