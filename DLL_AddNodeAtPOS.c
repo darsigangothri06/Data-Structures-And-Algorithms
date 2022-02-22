@@ -30,18 +30,21 @@ NODE* AddAtPos(NODE* START, int X, int POS)
     {
         p = START;
         q = NULL;
-        for(i = 0; i < (POS - 1); i++)
+        for(i = 0; i < (POS); i++)
         {
+            q = p;
+            p = p -> NEXT;
             if(p == NULL)
             {
                 printf("\nCannot Add due to insufficient nodes\n");
                 return START;
             }
-            q = p;
-            p = p -> NEXT;
         }
-        temp -> NEXT = p -> NEXT;
-        p -> NEXT = temp;
+        temp -> PREV = q;
+        temp -> NEXT = p;
+        p -> PREV = temp;
+        q -> NEXT = temp;
+
     }
 
     p = START;
@@ -59,7 +62,7 @@ int main()
 {
     NODE *P = AddAtPos(NULL,23,0);
     printf("Added %u\n",P);
-    NODE *Q = AddAtPos(P,213,7);
+    NODE *Q = AddAtPos(P,213,0);
     printf("Added %u\n",Q);
     NODE *R = AddAtPos(Q,89,1);
     printf("Added %u\n",R);
