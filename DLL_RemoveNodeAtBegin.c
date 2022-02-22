@@ -23,6 +23,8 @@ NODE* RemoveAtBegin(NODE *START)
     {
         q = START;
         START = START -> NEXT;
+        START -> PREV = NULL;
+        q -> NEXT = NULL;
         free(q);
     }
 
