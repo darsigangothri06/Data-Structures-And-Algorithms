@@ -1,5 +1,5 @@
-#include <stdio.h>
-# Bubble sort - Ascending Order
+# include <stdio.h>
+// Bubble sort - Ascending Order
 int main()
 {
     int a[20],i,j,temp,n;
