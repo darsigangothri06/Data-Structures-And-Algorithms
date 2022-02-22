@@ -25,6 +25,7 @@ NODE* RemoveNodeAtEnd(NODE* START)
             p = p -> NEXT;
         }
         q -> NEXT = NULL;
+        p -> PREV = NULL;
         free(p);
     }
 p = START;
