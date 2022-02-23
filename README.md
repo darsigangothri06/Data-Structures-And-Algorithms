@@ -36,7 +36,7 @@
   * [Queue Operations Using Linked List](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/SLL_QueueOperations.c)
 
 * Doubly Linked List
-  * [Add Node at end](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddAtBegin.c)
+  * [Add Node at end](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddAtEnd.c)
   * [Add Node at begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddNodeAtBegin.c)
   * [Add Node at position](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_AddNodeAtPOS.c)
   * [Remove Node at begin](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/DLL_RemoveNodeAtBegin.c)
