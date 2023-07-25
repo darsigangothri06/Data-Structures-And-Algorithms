@@ -62,3 +62,6 @@
 
 ### Binary Search Tree
   * [Insertion and Display](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BST_Insertion_Traversing.c)
+
+### Graphs
+  * [Dijkstra's Algorithm](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/DijkstraAlgo.py)
