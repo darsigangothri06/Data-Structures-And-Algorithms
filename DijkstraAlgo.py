@@ -14,14 +14,16 @@ def shortestPath(edges, n, src, dest):
         else:
             adj[s] = [(c, d)]
     visited = set()
-    current = src
+    newCost = 0
     path = []
     minHeap = [(0, src)]
-    while current != dest:
+    while minHeap:
         newCost, newVertex = heapq.heappop(minHeap)
         if newVertex in visited:
             continue
         visited.add(newVertex)
+        if newVertex == dest:
+            return newCost
         if newVertex not in adj:
             continue
         path.append(newVertex)
@@ -29,7 +31,6 @@ def shortestPath(edges, n, src, dest):
             c,d = edge
             if d not in visited:
                 heapq.heappush(minHeap, (newCost + c, d))
-        current = newVertex
     return path, newCost
 
 edges = [
