@@ -1,4 +1,4 @@
-# *Data Structures Using C*
+# *Data Structures and Algorithms*
 ### Sorting
 * [Bubble Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BubbleSort.c)
 * [Insertion Sort](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/Insertion%20Sort.c)
@@ -66,3 +66,4 @@
 ### Graphs
   * [Dijkstra's Algorithm](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/DijkstraAlgo.py)
   * [Matrix DFS](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/CountPaths.py)
+  * [Matrix BFS](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/MatrixBFS.py)
