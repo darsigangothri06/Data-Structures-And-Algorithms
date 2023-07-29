@@ -65,3 +65,4 @@
 
 ### Graphs
   * [Dijkstra's Algorithm](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/DijkstraAlgo.py)
+  * [Matrix DFS](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/CountPaths.py)
