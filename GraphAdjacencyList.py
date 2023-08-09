@@ -1,9 +1,4 @@
-class GraphNode:
-    def __init__(self, val):
-        self.val = val
-        self.neighbors = []
-
-adjList = { "A": [], "B": [] }
+# count paths from source to destination using adjacency list
 
 edges = [["A", "B"], ["B", "C"], ["B", "E"], ["C", "E"], ["E", "D"]]
 
