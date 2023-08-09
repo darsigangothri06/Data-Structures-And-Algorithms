@@ -64,7 +64,9 @@
   * [Insertion and Display](https://github.com/darsigangothri06/Data-Structures-Using-C/blob/main/BST_Insertion_Traversing.c)
 
 ### Graphs
-  * [Dijkstra's Algorithm](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/DijkstraAlgo.py)
-  * [Matrix DFS](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/CountPaths.py)
-  * [Matrix BFS](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/MatrixBFS.py)
-  * [Adjacency List](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/GraphAdjacencyList.py)
+  * [Dijkstra's Algorithm - Shortest Path from Source to Target](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/GraphDijkstraAlgo.py)
+  * [Dijkstra's Algorithm - Shortest Path from Source to All Paths]()
+  * [Matrix DFS - Count Paths](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/GraphMatrixDFS.py)
+  * [Matrix BFS - Shortest Path](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/GraphMatrixBFS.py)
+  * [Adjacency List DFS - Count Paths](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/GraphAdjacencyListDFS.py)
+  * [Adjacency List BFS - Shortest Path](https://github.com/darsigangothri06/Data-Structures-And-Algorithms/blob/main/GraphAdjacencyListBFS.py)
